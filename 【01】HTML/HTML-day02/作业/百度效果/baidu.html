@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 漏写了form和method为post -->
+    <form action="" method="post">
+    <table width="600" align="center" cellspacing="15">
+        <tr height="150">
+            <td>
+                <img src="images/logo_baidu.jpg" alt="">
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><h4>添加注册信息</h4></td>
+            <td></td>
+        </tr>
+        <!-- 漏写了input中的name -->
+        <tr>
+            <td align="right">邮箱：</td>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td align="right">密码：</td>
+            <td><input type="password" name="pwd"></td>
+        </tr>
+        <tr>
+            <td align="right"  name="repwd">确认密码：</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td align="right">验证码：</td>
+            <td>
+                <!-- 可以在td 中写个一行三列的table -->
+                <table>
+                <td><input type="text"></td>
+                <td><input type="image" src="images/yz.jpg"></td>
+                <td><a href="#">注册用户</a></td>
+            </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox"  name="select" checked="checked">
+                我已阅读并接受
+                <a href="#">《百度用户协议》</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <!-- 最下面一行内嵌table  -->
+                <table width=80%>
+                    <tr>
+                        <td><input type="image" src="images/button.jpg"></td>
+                        <td><input type="reset" value="重新填写"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
